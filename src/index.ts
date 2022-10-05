@@ -1,38 +1,48 @@
-let word: string = 'I am a boy';
-console.log(word);
+const a: string = "I Love Typescript";
+ console.log('aaa', a);
 
-type Excluded = [
-    hope: string,
-    love: string,
-    peace: string
-];
-let myArray: Excluded = ['hope', 'love', 'peace '];
-myArray.forEach(item => {
-    console.log(`${item} is one of the best quality a human can have`);
-})
-type CaptionType = {
-    bestSaying: string,
-    worstSaying: string
-};
-type HomeType = {
-    name: string,
-    id: number,
-    caption: CaptionType,
-    hobby: {
-        dancing: string,
-        singing: string,
-        sporting: string
-    };
-}
 
-let home: HomeType = {
-    name:  'Maine',
-    id: 22_40_89,
-    caption: CaptionType {
-        bestSaying: 'I love the world',
-        worstSaying: 'I love you'
-    },
-    hobby: ['dancing', 'singing', 'sporting']
-};
+//functions in typescript
+ const getFullName = (name: string, surname: string): string => {
+      return `My Name is ${name} ${surname}`;
+ };
+ console.log(getFullName('Mehila', 'Typescript'));
 
-    export{};
+ // Interfaces
+ interface UserInterface {
+      names: string,
+      ages?: number,
+      getMessage(): string
+ };
+ const user: UserInterface = {
+      names: 'Monster',
+      ages: 30,
+      getMessage() {
+           return `Hello ${this.names}`;
+      },
+ };
+ const user2: UserInterface = {
+      names: 'Jack',
+     getMessage() {
+           return `Hello ${this.names}`;
+      },
+ };
+
+// Union Operator
+ let username: string = "Alex";
+ let pageNumber: string | number = "1";
+
+ //Test typescript
+ const clickFunc = () => {
+      let btn = document.querySelector("#my-btn") as HTMLButtonElement;
+
+      btn.addEventListener('click', () => {
+           alert("I am a Boy");
+      });
+ }
+clickFunc();
+
+
+
+ export {};
+
