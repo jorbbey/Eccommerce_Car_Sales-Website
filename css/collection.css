@@ -1,0 +1,209 @@
+.collections-ctn{
+     height: auto;
+     max-width: 100%;
+     /* background-color: purple; */
+}
+
+.collection-ctn{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     width: 85%;
+     height: auto;
+     margin: 50px auto;
+     /* background-color: green; */
+}
+
+.heading{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 100%;
+          height: auto;
+          margin: 50px auto;
+          /* background-color: brown; */
+}
+
+.heading li{
+     color: rgb(238, 228, 228);
+     cursor: pointer;
+}
+
+.heading .mobile {
+     display: none;
+}
+
+.heading li::after {
+     content: '';
+     width: 0%;
+     height: 2px;
+     background: antiquewhite;
+     display: block;
+     margin: auto;
+     transition: 0.5s;
+}
+
+.heading li:hover::after {
+     width: 100%;
+}
+
+.collection-ctn #large {
+     background-color: green;
+}
+
+.collection-ctn #small {
+     background-color: purple;
+}
+
+.collection-ctn #exclusive {
+     background-color: brown;
+}
+
+.collection-ctn .collection-box {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-items: center;
+     width: 100%;
+     height: auto;
+     /* background-color: blue; */
+}
+
+.collection-ctn .collection-box .row {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 30%;
+     height: auto;
+     margin: 20px auto;
+     /* background-color: darkgoldenrod; */
+}
+
+
+
+.collection-ctn .collection-box .row .image{
+     background-color: peru; 
+     width: 250px;
+     height: 200px;
+}
+
+.collection-ctn .collection-box .row .info{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     width: 100%;
+     height: auto;
+     margin: 20px auto;
+     color: aliceblue;
+     /* background-color: greenyellow ; */
+}
+
+.collection-ctn .collection-box .row .name{
+     margin: 10px auto;
+     color: aliceblue;
+     /* background-color: green; */
+}
+
+.collection-ctn .collection-box .row button{
+     margin: 20px auto;
+}
+
+.collections-ctn .btn{
+     width: 200px;
+     height: auto;
+     margin: 20px auto;
+}
+
+.collections-ctn .btn #cars{
+     outline: none;
+     border: none;
+     position: relative;
+     background-color: ghostwhite;
+     color: #000;
+     padding: 5px;
+     width: 200px;
+     height: 35px;
+}
+
+@media (max-width: 760px) {
+     .collections-ctn {
+               height: auto;
+               max-width: 100%;
+          }
+     
+          .collection-ctn {
+               width: 90%;
+               height: auto;
+               margin: 50px auto;
+          }
+     
+          .heading {
+               display: block;
+               width: 20%;
+               height: 20px;
+               margin: 50px auto;
+               margin-left: 10px;
+               overflow: hidden;
+               transition: all 0.5s;
+          }
+          
+     .heading .mobile {
+          display: block;
+          }
+          .heading .mobile .icon{
+               margin-left: 70px;
+               margin-top: -20px;
+          }
+
+          .heading li:first-child{
+               display: none;
+          }
+          .heading li {
+               color: rgb(238, 228, 228);
+               list-style-type: none;
+               width: 100px;
+          }
+
+                    .heading li::after {
+                         margin-left: 0;
+                    }
+
+                    .heading li:hover::after {
+                         width: 70%;
+                    }
+     
+          .collection-ctn .collection-box {
+               display: flex;
+               flex-direction: column;
+               justify-content: space-around;
+               align-items: center;
+               width: 100%;
+               height: auto;
+          }
+     
+          .collection-ctn .collection-box .row {
+               width: 90%;
+               height: auto;
+               margin: 20px auto;
+                background-color: darkgoldenrod; 
+          }
+     
+     
+     
+          .collection-ctn .collection-box .row .image {
+               background-color: peru;
+               width: 300px;
+               height: 200px;
+          }
+     
+          .collection-ctn .collection-box .row .info {
+               width: 90%;
+               height: auto;
+               margin: 20px auto;
+               color: aliceblue;
+               background-color: greenyellow ; 
+          }
+     
+}

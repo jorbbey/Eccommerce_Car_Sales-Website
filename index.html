@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Poppins:wght@200;300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-<script defer src="script/menu.js"></script>
-<script defer src="script/inner-menu.js"></script>
-<script defer src="script/app.js"></script>
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/collection.css">
+<script defer src="dist/menu.js"></script>
+<script defer src="dist/FAQs.js"></script>
+<script defer src="dist/collection.js"></script>
     <title>Car Dealers</title>
 </head>
 <body>
@@ -132,9 +133,10 @@
     </div>
  <!--Features-->
  <div class="features">
-    <h1>we have best features</h1>
-    <p>We are all about our client's comfort and safety. That's why we provide thw best services we can give.</p>
-    
+    <div class="custom-head">
+        <h1>we have best features</h1>
+        <p>We are all about our client's comfort and safety. That's why we provide thw best services we can give.</p>
+    </div>
     <div class="feature-ctn">
         <div class="feature">
             <div class="index">01</div>
@@ -171,8 +173,319 @@
  <!---Collections-->
 
  <div class="collections-ctn">
-    
+        <div class="custom-head">
+            <h1>our collection cars</h1>
+            <p>Get the car of your dreams with the installments of your choice. There are various attrctive offers from our car library through our collaboration with various trusted leasing partners</p>
+        </div>
+
+        <div class="collection-ctn">
+            <div class="heading" id="collection-head">
+                <li id="popular-btn">Popular</li>
+                <li class="mobile" id="popular-btn"> Popular <i class="icon"> &rarr;</i> </li>
+                <li id="large-btn">Large Car</li>
+                <li id="small-btn">Small Car</li>
+                <li id="exclusive-btn">Exclusive Car</li>
+            </div>
+        <!--Popular Cars-->
+            <div class="collection-box" id="popular">
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+
+            <!--Large Cars -->
+            <div class="collection-box" id="large">
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+
+            <!--Small Cars -->
+            <div class="collection-box" id="small">
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+
+            <!--Exclusive Cars -->
+            <div class="collection-box" id="exclusive">
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+                <div class="row">
+                    <div class="image">Image goes here</div>
+                    <div class="info">
+                        <p class="price">price goes here</p>
+                        <p class="location"> location goes here</p>
+                    </div>
+                    <p class="name">name goes here</p>
+                    <button>Buy Now</button>
+                </div>
+            </div> -->
+
+        </div>
+        <div class="btn"><button id="cars">See all cars</button></div>
  </div>
+
+ <!--FAQs-->
+ <div class="FAQs-ctn">
+    <div class="text">
+        <div class="head">
+        <h3>Maybe Your Questons Have Been Answered</h3>
+        <h3>Check This Out</h3>
+      </div>
+      <div class="question">
+        <div class="header">
+            <h4>Leaves a lasting sheet on your point</h4>
+            <div class="hamburger" id="first-btn">
+                <div class="vert"></div>
+                <div class="horz"></div>
+            </div>
+        </div>
+        <div class="question-text" id="first-text">
+           <p>Get the car of your dreams with the Installments 
+            of your choice. There are various attrctive 
+            offers from Moladin with the Installments 
+            of your choice. There are various attrctive 
+            offers</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="header">
+            <h4>Leaves a lasting sheet on your point</h4>
+            <div class="hamburger" id="second-btn">
+                <div class="vert"></div>
+                <div class="horz"></div>
+            </div>
+        </div>
+        <div class="question-text" id="second-text">
+            <p>Get the car of your dreams with the Installments
+                of your choice. There are various attrctive
+                offers from Moladin with the Installments
+                of your choice. There are various attrctive
+                offers</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="header">
+            <h4>Leaves a lasting sheet on your point</h4>
+            <div class="hamburger" id="third-btn">
+                <div class="vert"></div>
+                <div class="horz"></div>
+            </div>
+        </div>
+        <div class="question-text" id="third-text">
+            <p>Get the car of your dreams with the Installments
+                of your choice. There are various attrctive
+                offers from Moladin with the Installments
+                of your choice. There are various attrctive
+                offers</p>
+        </div>
+    </div>
+    </div>
+    <div class="image">
+        <img src="images/download.jpg" alt="image">
+    </div>
+</div>
+
+
 
 </body>
 </html>

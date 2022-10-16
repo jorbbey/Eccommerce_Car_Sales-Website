@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href= "app.css">
+     <script defer src="../dist/index.js"></script>
+     <title>Document</title>
+</head>
+<body>
+     <h1>Finance Logger</h1>
+     <form action="#!" class="new-item-form">
+          <div class="field">
+          <label>Type:</label>
+               <select id="type">
+                    <option value="Invoice">Invoice</option>
+                    <option value="Cheque">Cheque</option>
+                    <option value="Query"> Query</option>
+               </select>
+     </div>
+          <div class="field">
+          <label>To / From</label><br>
+          <input type="text" id="tofrom">
+     </div>
+     <div class="field">
+          <label>Details:</label><br>
+          <input type="text" id="details">
+     </div>
+     <div class="field">
+          <label>Amount (E):</label><br>
+          <input type="number" id="amount">
+     </div>
+     <button>Add</button>
+     <a href="https://www.thenetninja.co.uk">The Net Ninja</a>
+</form>
+
+</body>
+</html>

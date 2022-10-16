@@ -10,6 +10,23 @@ body{
     font-family: Source Sans Pro;
 }
 
+.custom-head h1 {
+    color: ghostwhite;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.custom-head p {
+    font: 22px;
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: rgb(238, 228, 228);
+}
+
 .hero-btn{
     position: relative;
     outline: none;
@@ -34,7 +51,7 @@ nav {
     background-position: right;
     height: 100vh;
     position: relative;
-    filter: brightness(65%);
+    filter: brightness(75%);
 }
 
 @media (max-width: 700px) {
@@ -226,14 +243,7 @@ nav {
     height: auto;
 }
 
-.features h1{
-    color: ghostwhite;
-    font-size: 30px;
-    text-transform: uppercase;
-    margin: 20px auto;
-}
-
-.features p{
+.features p {
     font: 22px;
     color: rgb(238, 228, 228);
 }
@@ -296,5 +306,132 @@ nav {
     height: 220px;
     text-align: center;
 }
+
+}
+/* 
+FAQS section */
+.FAQs-ctn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 85%;
+    height: auto;
+    margin: 50px auto;
+}
+.FAQs-ctn .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 55%;
+    height: auto;
+}
+
+.FAQs-ctn .text .head{
+    color: antiquewhite;
+    margin: 20px auto;
+    margin-left: 0;
+}
+
+.FAQs-ctn .text .question{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px auto;
+    line-height: 1.5;
+    color: whitesmoke;
+    width: 100%;
+}
+
+.FAQs-ctn .text .question .header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        width: 100%;
+}
+
+.question #first-text, #second-text, #third-text{
+    display: none;
+}
+
+.question .header .hamburger {
+    position: static;
+    height: 30px;
+    width: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+    transform: rotate(0);
+}
+
+.question .header .hamburger:hover{
+    filter: brightness(60%);
+}
+
+ .question .header .hamburger .vert{
+    background-color: whitesmoke;
+    width: 2px;
+    height: 12px;
+    margin: 0 auto;
+    transform: translateY(5px);
+ }
+
+ .question .header .hamburger .horz {
+     background-color: whitesmoke;
+     width: 13px;
+     height: 2px;
+     margin: 0 auto;
+    transform: translateY(-2.5px);
+ }
+
+ .open{
+    transform: rotate(90deg);
+    transform: translateY(0);
+ }
+
+ .open .vert{
+    display: none;
+ }
+
+ .open .horz {
+     transform: translateY(10px);
+ }
+
+.FAQs-ctn .image{
+    width: 35%;
+    height: auto;
+}
+
+.FAQs-ctn .image img{
+    width: 100%;
+    height: 300px;
+}
+
+@media (max-width: 700px) {
+    /* 
+    FAQS section */
+        .FAQs-ctn {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 90%;
+            height: auto;
+        }
+
+        .FAQs-ctn .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.FAQs-ctn .image {
+    width: 90%;
+    height: auto;
+}
+
 
 }
